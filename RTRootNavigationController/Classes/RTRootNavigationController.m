@@ -275,6 +275,10 @@ __attribute((overloadable)) static inline UIViewController *RTSafeWrapViewContro
     return [self.contentViewController preferredStatusBarStyle];
 }
 
+- (BOOL)extendedLayoutIncludesOpaqueBars {
+    return [self.contentViewController extendedLayoutIncludesOpaqueBars];
+}
+
 - (BOOL)prefersStatusBarHidden
 {
     return [self.contentViewController prefersStatusBarHidden];
